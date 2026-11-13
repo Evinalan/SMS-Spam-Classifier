@@ -12,7 +12,7 @@ from nltk.stem import PorterStemmer
 # STEP 1: Initialize NLP tools
 
 stemmer = PorterStemmer()
-
+nltk.download("stopwords", quiet=True)
 stop_words = set(stopwords.words("english"))
 
 # Preserve negation words
